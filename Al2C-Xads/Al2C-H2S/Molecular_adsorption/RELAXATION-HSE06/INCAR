@@ -1,0 +1,40 @@
+System = Al2C
+NWRITE = 2
+PREC   = Accurate
+LREAL  = auto
+ROPT   = 2e-4 2e-4 2e-4 2e-4
+ISTART = 0
+# ALGO = Fast
+# IALGO  = 48    ! 8: CG, 48: DIIS algorithm for electrons
+ENCUT   = 450
+GGA = PE
+LHFCALC=.TRUE.
+HFSCREEN=0.2
+ALGO=Damped
+TIME=0.4
+
+Electronic relaxation
+NELM   = 300
+NELMDL = -7
+EDIFF  = 1e-5 
+ISMEAR = 0   ! 0: Gaussian, electron smearing
+SIGMA  = 0.05
+
+Ionic relaxation
+EDIFFG = -0.01  ! - means force is less than
+NSW    = 400    ! # of steps in optimization (default 0!)
+IBRION = 2     ! 1: quasi-NR, 2:CG algorithm for ions
+#NFREE  = 10    ! number of DIIS vectors to save
+POTIM  = 0.35   ! reduce trial step in optimization
+ISIF   = 2     ! 0: relax ions, 1,2:relax ions,calc stresses, 3:relax ion+cell
+ISYM   = 0
+
+LWAVE =  .FALSE.  ! write WAVECAR?
+LCHARG = .FALSE.   ! write CHGCAR?
+#LVTOT =  .FALSE.  ! write LOCPOT?
+
+Parallel
+LPLANE = .TRUE.
+NPAR   = 4
+LSCALU = .FALSE.
+NSIM = 4

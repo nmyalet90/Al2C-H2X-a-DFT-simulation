@@ -1,0 +1,18 @@
+--------------------------------------------------------------------------
+[[4004,1],2]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: compute-4-0
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+ running on    4 total cores
+ distrk:  each k-point on    4 cores,    1 groups
+ distr:  one band on    1 cores,    4 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Dec  6 2019 17:49:40) complex           
+ERROR: the following files does not exist POSCAR
+[compute-4-0.cluster.gsc.inifta.unlp.edu.ar:16786] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[compute-4-0.cluster.gsc.inifta.unlp.edu.ar:16786] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
