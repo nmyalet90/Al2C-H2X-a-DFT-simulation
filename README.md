@@ -32,6 +32,4 @@ If you use this data or find the research helpful, please cite the original pape
 
 ## Contact
 **Nahuel Moreno Yalet**  
-Instituto de Investigaciones Fisicoquímicas Teóricas y Aplicadas (INIFTA), CONICET - UNLP.  
-**Víctor A. Ranea**  
-vranea@inifta.unlp.edu.ar
+  nmyalet@gmail.com
