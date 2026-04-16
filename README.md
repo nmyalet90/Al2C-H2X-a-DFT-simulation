@@ -33,11 +33,48 @@ Each calculation folder contains the standard VASP files required to reproduce t
 *   **Sensing Potential:** Adsorption significantly increases the energy gap of the Al2C nanosheet, suggesting its potential use as a chemical sensor.
 
 ## 📂 Repository Structure
-*   `Pristine_Al2C/`: Optimized structure and DOS of the clean nanosheet.
-*   `Molecular_Adsorption/`: Input/output files for H2O, H2S, H2Se, and H2Te in molecular state.
-*   `Dissociative_Adsorption/`: Calculations for the partially dissociated fragments (XH + H).
-*   `NEB_Calculations/`: Transition state searches for molecular dissociation.
-*   `Electronic_Properties/`: HSE06 calculations for DOS and band gap analysis.
+All **Al2C–H₂X systems (X = O, S, Se, Te)** share the same directory structure:
+
+```bash
+Al2C-H2X/
+├── Dissociative_adsorption/
+│   ├── DOS-HSE06/
+│   ├── RELAXATION-DF2/
+│   ├── RELAXATION-PBE/
+│   └── SINGLE-POINT-HSE06/
+│
+├── Molecular_adsorption/
+│   ├── DOS-HSE06/
+│   ├── phonon_analysis-PBE/
+│   ├── RELAXATION-DF2/
+│   ├── RELAXATION-HSE06/
+│   ├── RELAXATION-PBE/
+│   └── SINGLE-POINT-HSE06/
+│
+└── NEB/
+
+> *This standardized structure ensures consistency across different adsorbates and facilitates comparison between systems.*
+
+## 🧩 Description
+
+- **Dissociative_adsorption/**: Calculations where the molecule breaks into fragments upon adsorption on the Al₂C surface.  
+- **Molecular_adsorption/**: Calculations where the molecule remains intact during adsorption.  
+- **NEB/**: Nudged Elastic Band calculations used to determine reaction pathways and energy barriers between states.  
+
+#### Calculation types
+
+- **RELAXATION-***: Geometry optimizations of the system.  
+- **SINGLE-POINT-***: Single-point energy calculations on optimized structures.  
+- **DOS-HSE06/**: Electronic density of states calculations using the HSE06 functional.  
+- **phonon_analysis-PBE/**: Vibrational (phonon) analysis to assess dynamical stability.  
+
+#### Functionals
+
+- **PBE**: Generalized Gradient Approximation (GGA), widely used for structural optimization.  
+- **HSE06**: Hybrid functional providing improved electronic structure accuracy.  
+- **DF2**: van der Waals density functional, accounting for dispersion interactions.  
+
+
 
 ## 📑 Citation
 If you use this data or find the research helpful, please cite:
