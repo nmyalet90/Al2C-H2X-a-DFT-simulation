@@ -1,38 +1,52 @@
 # ⚛️ Al2C Nanosheet Interactions with H2X Molecules: A DFT Study
 
-This repository contains the input and output files for the Density Functional Theory (DFT) simulations presented in the research article: **"A density functional theory research on the interaction of H2X molecules with the Al2C nanosheet (X = O, S, Se, Te)"**.
+This repository contains the input and output files for the Density Functional Theory (DFT) simulations presented in the research article: **"A Density Functional Theory Study on the Interaction of H2X Molecules with the Al2C Nanosheet (X = O, S, Se, Te)"**.
 
 ## 📖 Project Overview
-The study explores the potential of the 2D material **Al2C** as a catalyst and sensor for hazardous molecules (H2S, H2Se, and H2Te) and water (H2O). Using first-principles calculations, we analyzed the adsorption configurations, electronic properties, and dissociation pathways of these molecules on the pristine Al2C nanosheet.
+This study investigates the potential of the 2D material **Al2C** as a catalyst and sensor for hazardous molecules (H2S, H2Se, and H2Te) and water (H2O). Using first-principles calculations, we analyzed the adsorption configurations, electronic properties, and dissociation pathways of these molecules on the pristine Al2C nanosheet.
+
+This work highlights how computational modeling can accelerate the discovery of novel materials for sensing and catalysis, reducing the need for costly experimental trial-and-error and enabling more efficient data-driven materials design.
 
 ## 🛠️ Methodology
 The simulations were performed using the **Vienna Ab initio Simulation Package (VASP)**. Key technical details include:
-*   **Functional:** GGA-PBE for exchange-correlation energies.
-*   **Van der Waals (vdW):** London dispersion forces were accounted for using the **vdW-DF2 (rPW86)** functional.
-*   **Electronic Properties:** The **HSE06** hybrid functional was applied to obtain accurate density of states (DOS) and energy gap calculations.
-*   **Reaction Pathways:** Minimum energy pathways (MEP) were calculated using the **Climbing Image Nudged Elastic Band (ciNEB)** method.
+
+* **Functional:** GGA-PBE for exchange-correlation energies.  
+* **Van der Waals (vdW):** London dispersion forces were accounted for using the **vdW-DF2 (rPW86)** functional.  
+* **Electronic Properties:** The **HSE06** hybrid functional was applied to obtain accurate density of states (DOS) and energy gap calculations.  
+* **Reaction Pathways:** Minimum energy pathways (MEP) were calculated using the **Climbing Image Nudged Elastic Band (ciNEB)** method.  
+
+## 🔄 Workflow Overview
+
+1. Structure definition of Al2C and H2X molecules  
+2. Geometry optimization (PBE / DF2)  
+3. Electronic structure calculations (HSE06, DOS)  
+4. Adsorption analysis (molecular vs dissociative)  
+5. Reaction pathway analysis using CI-NEB  
 
 ## 📄 DFT Simulation Files
+
 Each calculation folder contains the standard VASP files required to reproduce the results:
 
 ### 📥 Input Files
-*   **INCAR:** The central control file that contains the tags for the simulation (e.g., electronic minimization algorithms, ionic relaxation steps, and functional settings).
-*   **POSCAR:** Defines the initial atomic structure, including lattice constants and atomic coordinates of the Al2C nanosheet and the H2X molecules.
-*   **POTCAR:** Contains the pseudopotentials for each atomic species (Al, C, O, S, Se, Te).
-*   **KPOINTS:** Defines the k-point mesh used for sampling the Brillouin zone.
+* **INCAR:** Control file with simulation parameters (electronic minimization, ionic relaxation, functional settings).  
+* **POSCAR:** Initial atomic structure (lattice + atomic positions).  
+* **POTCAR:** Pseudopotentials for each atomic species (Al, C, O, S, Se, Te).  
+* **KPOINTS:** k-point mesh for Brillouin zone sampling.  
 
 ### 📤 Output Files
-*   **OUTCAR:** A detailed log file of the entire simulation, including total energies, forces acting on ions, and eigenvalues.
-*   **CONTCAR:** The final configuration of the atoms after a geometry relaxation, reflecting the optimized adsorption or dissociated state.
-*   **DOSCAR:** Contains the data for the Density of States (DOS) used to analyze the electronic property changes.
-*   **CHGCAR/WAVECAR:** Files containing the electronic charge density and the converged wavefunctions, respectively.
+* **OUTCAR:** Full simulation log (energies, forces, eigenvalues).  
+* **CONTCAR:** Final optimized atomic structure.  
+* **DOSCAR:** Density of States (DOS) data.  
+* **CHGCAR / WAVECAR:** Charge density and wavefunctions.  
 
 ## 🚀 Key Findings
-*   **Preferential Adsorption:** Partial dissociative adsorption (XH-H) is energetically preferred over molecular adsorption for all studied molecules.
-*   **Low Activation Barriers:** Dissociation activation energies are remarkably low, notably for H2S, H2Se, and H2Te.
-*   **Sensing Potential:** Adsorption significantly increases the energy gap of the Al2C nanosheet, suggesting its potential use as a chemical sensor.
+
+* **Preferential Adsorption:** Partial dissociative adsorption (XH–H) is energetically preferred over molecular adsorption.  
+* **Low Activation Barriers:** Dissociation barriers are remarkably low, especially for H2S, H2Se, and H2Te.  
+* **Sensing Potential:** Adsorption significantly modifies the electronic structure, suggesting strong potential for chemical sensing applications.  
 
 ## 📂 Repository Structure
+
 All **Al2C–H₂X systems (X = O, S, Se, Te)** share the same directory structure:
 
 ```bash
@@ -53,7 +67,7 @@ Al2C-H2X/
 │
 └── NEB/
 
-> *This standardized structure ensures consistency across different adsorbates and facilitates comparison between systems.*
+This standardized structure ensures consistency across different adsorbates and facilitates comparison between systems.*
 
 ## 🧩 Description
 
