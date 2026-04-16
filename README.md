@@ -49,7 +49,6 @@ Each calculation folder contains the standard VASP files required to reproduce t
 
 All **Al2C–H₂X systems (X = O, S, Se, Te)** share the same directory structure:
 
-```bash
 Al2C-H2X/
 ├── Dissociative_adsorption/
 │   ├── DOS-HSE06/
