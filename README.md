@@ -16,8 +16,8 @@ The simulations were performed using the **Vienna Ab initio Simulation Package (
 Each calculation folder contains the standard VASP files required to reproduce the results:
 
 ### 📥 Input Files
-*   **INCAR:** The central control file that contains the tags for the simulation (e.g., electronic minimization algorithms, ionic relaxation steps, and functional settings) [2, 8].
-*   **POSCAR:** Defines the initial atomic structure, including lattice constants and atomic coordinates of the Al2C nanosheet and the H2X molecules [2, 9].
+*   **INCAR:** The central control file that contains the tags for the simulation (e.g., electronic minimization algorithms, ionic relaxation steps, and functional settings).
+*   **POSCAR:** Defines the initial atomic structure, including lattice constants and atomic coordinates of the Al2C nanosheet and the H2X molecules.
 *   **POTCAR:** Contains the pseudopotentials for each atomic species (Al, C, O, S, Se, Te).
 *   **KPOINTS:** Defines the k-point mesh used for sampling the Brillouin zone.
 
