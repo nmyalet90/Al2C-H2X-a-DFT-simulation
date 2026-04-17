@@ -66,6 +66,7 @@ Al2C-H2X/
 │   └── SINGLE-POINT-HSE06/
 │
 └── NEB/
+```
 
 This standardized structure ensures consistency across different adsorbates and facilitates comparison between systems.*
 
