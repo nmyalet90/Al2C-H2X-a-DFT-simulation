@@ -2,6 +2,8 @@
 
 This repository contains the input and output files for the Density Functional Theory (DFT) simulations presented in the research article: **"A Density Functional Theory Study on the Interaction of H2X Molecules with the Al2C Nanosheet (X = O, S, Se, Te)"**.
 
+🔗 Read the full article: https://doi.org/10.1016/j.nxmate.2024.100114
+
 ## 📖 Project Overview
 This study investigates the potential of the 2D material **Al2C** as a catalyst and sensor for hazardous molecules (H2S, H2Se, and H2Te) and water (H2O). Using first-principles calculations, we analyzed the adsorption configurations, electronic properties, and dissociation pathways of these molecules on the pristine Al2C nanosheet.
 
